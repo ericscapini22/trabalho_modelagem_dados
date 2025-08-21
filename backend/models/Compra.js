@@ -28,7 +28,7 @@ const Compra = db.define('compra', {
         allowNull: false
     },
     dataCompra: {
-        type: DataTypes.DATE,
+        type: DataTypes.STRING,
         allowNull: false
     },
     precoUnitario: {
