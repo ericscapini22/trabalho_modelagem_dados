@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="" defer></script>
+    <title>Cadastrar Compras</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="../usuario/cadastrarUsuario.html">Usuário</a>
+            <a href="../produto/cadastrarProduto.html">Produto</a>
+            <a href="cadastrarCompra.html">Compra</a>
+        </nav>
+    </header>
+    <br><br>
+    <main>
+        <h1>Compra - CRUD</h1>
+        <br><br>
+        <nav>
+            <a href="listarCompra.html">Listar</a>
+            <a href="atualizarCompra.html">Atualizar</a>
+            <a href="apagarCompra.html">Apagar</a>
+        </nav>
+        <br><br>
+        <h2>Cadastrar Compra</h2>
+        <br><br>
+        <form>
+            <label for="titulo">Digite o título do Produto:</label>
+            <br>
+            <input type="text" id="titulo" placeholder="Título">
+            <br><br>
+            <label for="descricao">Digite a descrição do Produto:</label>
+            <br>
+            <input type="text" id="descricao" placeholder="Descrição">
+            <br><br>
+            <label for="categoria">Digite a categoria do Produto:</label>
+            <br>
+            <input type="text" id="categoria" placeholder="Categoria">
+            <br><br>
+            <label for="preco">Digite o preço do Produto:</label>
+            <br>
+            <input type="text" id="preco" placeholder="Preço: (ex: 1000.00)">
+            <br><br>
+            <label for="porcentagemDesconto">Digite a porcentagem de desconto do Produto:</label>
+            <br>
+            <input type="number" id="porcentagemDesconto" placeholder="Porcentagem de Desconto">
+            <br><br>
+            <label for="estoque">Digite a quantidade de estoque do Produto:</label>
+            <br>
+            <input type="number" id="estoque" placeholder="Estoque">
+            <br><br>
+            <label for="marca">Digite a marca do Produto:</label>
+            <br>
+            <input type="text" id="marca" placeholder="Marca">
+            <br><br>
+            <label for="ft_produto">Foto do Produto:</label>
+            <br>
+            <input type="text" id="ft_produto" placeholder="URL da foto">
+            <br><br><br>
+            <button id="cadastrarProduto">Cadastrar</button>
+            <br><br>
+        </form>
+    </main>
+    <div id="res"></div>
+</body>
+</html>

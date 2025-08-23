@@ -1,0 +1,29 @@
+body {
+    color: black;
+    background-color: whitesmoke;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+footer {
+    margin-top: 740px;
+}
+
+a {
+    padding-left: 15px;
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: 1.5rem;
+    transition: 0.8s;
+}
+
+#res {
+    margin-top: 20px;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 1.3rem;
+    color: #222;
+    max-height: 400px;
+}

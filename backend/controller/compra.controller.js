@@ -27,13 +27,13 @@ const atualizar = async (req,res)=>{
     try {
         const valores = await Compra.findByPk(id)
         if (valores === null) {
+            console.error('Falha ao tentar encontrar Compra!',err)
+            res.status(404).json({message: "Falha ao tentar encontrar Compra!"})
+        } else {
             await Compra.update(dados, {where: {idCompra: id}})
             const valoresAtual = await Compra.findByPk(id)
             res.status(200).json(valoresAtual)
             console.log('Dados da Compra atualizados com Sucesso!')
-        } else {
-            console.error('Falha ao tentar encontrar Compra!',err)
-            res.status(404).json({message: "Falha ao tentar encontrar Compra!"})
         }
     } catch (err) {
         console.error('Falha ao tentar atualizar dados da Compra!',err)
@@ -46,12 +46,12 @@ const apagar = async (req,res)=>{
     try {
         const valores = await Compra.findByPk(id)
         if (valores === null) {
+            console.error('Falha ao tentar encontrar Compra!',err)
+            res.status(404).json({message: "Falha ao tentar encontrar Compra!"})
+        } else {
             await Compra.destroy({where: {idCompra: id}})
             res.status(200).json({message: "Dados da Compra apagados com Sucesso!"})
             console.log('Dados da Compra apagados com Sucesso!')
-        } else {
-            console.error('Falha ao tentar encontrar Compra!',err)
-            res.status(404).json({message: "Falha ao tentar encontrar Compra!"})
         }
     } catch (err) {
         console.error('Falha ao tentar apagar dados da Compra!',err)

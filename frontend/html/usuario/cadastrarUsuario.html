@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/usuario/cadastrarUsuario.js" defer></script>
+    <title>Cadastrar Usuários</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="./cadastrarUsuario.html">Usuário</a>
+            <a href="../produto/cadastrarProduto.html">Produto</a>
+            <a href="../compra/cadastrarCompra.html">Compra</a>
+        </nav>
+    </header>
+    <br><br>
+    <main>
+        <h1>Usuário - CRUD</h1>
+        <br><br>
+        <nav>
+            <a href="listarUsuario.html">Listar</a>
+            <a href="atualizarUsuario.html">Atualizar</a>
+            <a href="apagarUsuario.html">Apagar</a>
+        </nav>
+        <br><br>
+        <h2>Cadastrar Usuário</h2>
+        <br><br>
+        <form>
+            <label for="nome">Digite o nome do Usuário:</label>
+            <br>
+            <input type="text" id="nome" placeholder="Nome">
+            <br><br>
+            <label for="sobrenome">Digite o sobrenome do Usuário:</label>
+            <br>
+            <input type="text" id="sobrenome" placeholder="Sobrenome">
+            <br><br>
+            <label for="idade">Digite a idade do Usuário:</label>
+            <br>
+            <input type="number" id="idade" placeholder="Idade">
+            <br><br>
+            <label for="email">Digite o email do Usuário:</label>
+            <br>
+            <input type="text" id="email" placeholder="Email">
+            <br><br>
+            <label for="telefone">Digite o telefone do Usuário:</label>
+            <br>
+            <input type="text" id="telefone" placeholder="Telefone">
+            <br><br>
+            <label for="endereco">Digite o endereço do Usuário:</label>
+            <br>
+            <input type="text" id="endereco" placeholder="Endereço">
+            <br><br>
+            <label for="cidade">Digite a cidade do Usuário:</label>
+            <br>
+            <input type="text" id="cidade" placeholder="Cidade">
+            <br><br>
+            <label for="estado">Digite o estado do Usuário:</label>
+            <br>
+            <input type="text" id="estado" placeholder="Estado">
+            <br><br>
+            <label for="dataNascimento">Digite a data de nascimento do Usuário:</label>
+            <br>
+            <input type="date" id="dataNascimento" placeholder="Data de Nascimento">
+            <br><br><br>
+            <button id="cadastrarUsuario">Cadastrar</button>
+            <br><br>
+        </form>
+    </main>
+    <div id="res"></div>
+</body>
+</html>

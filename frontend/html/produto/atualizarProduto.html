@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/produto/atualizarProduto.js" defer></script>
+    <title>Atualizar Produtos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="../usuario/cadastrarUsuario.html">Usuário</a>
+            <a href="./cadastrarProduto.html">Produto</a>
+            <a href="../compra/cadastrarCompra.html">Compra</a>
+        </nav>
+    </header>
+    <br><br>
+    <main>
+        <h1>Produto - CRUD</h1>
+        <br><br>
+        <nav>
+            <a href="cadastrarProduto.html">Cadastrar</a>
+            <a href="listarProduto.html">Listar</a>
+            <a href="apagarProduto.html">Apagar</a>
+        </nav>
+        <br><br>
+        <h2>Atualizar Produto</h2>
+        <br><br>
+        <form>
+            <label for="idProduto">Digite o ID do produto que deseja atualizar:</label>
+            <br>
+            <input type="number" id="idProduto" placeholder="ID do Produto">
+        </form>
+        <br><br>
+        <form>
+            <label for="titulo">Digite o título do Produto:</label>
+            <br>
+            <input type="text" id="titulo" placeholder="Título">
+            <br><br>
+            <label for="descricao">Digite a descrição do Produto:</label>
+            <br>
+            <input type="text" id="descricao" placeholder="Descrição">
+            <br><br>
+            <label for="categoria">Digite a categoria do Produto:</label>
+            <br>
+            <input type="text" id="categoria" placeholder="Categoria">
+            <br><br>
+            <label for="preco">Digite o preço do Produto:</label>
+            <br>
+            <input type="text" id="preco" placeholder="Preço">
+            <br><br>
+            <label for="porcentagemDesconto">Digite a porcentagem de desconto do Produto:</label>
+            <br>
+            <input type="number" id="porcentagemDesconto" placeholder="Porcentagem de Desconto">
+            <br><br>
+            <label for="estoque">Digite a quantidade de estoque do Produto:</label>
+            <br>
+            <input type="number" id="estoque" placeholder="Estoque">
+            <br><br>
+            <label for="marca">Digite a marca do Produto:</label>
+            <br>
+            <input type="text" id="marca" placeholder="Marca">
+            <br><br>
+            <label for="ft_produto">Foto do Produto:</label>
+            <br>
+            <input type="text" id="ft_produto" placeholder="URL da foto (opcional)">
+            <br><br><br>
+            <button id="atualizarProduto">Atualizar</button>
+            <br><br>
+        </form>
+    </main>
+    <div id="res"></div>
+</body>
+</html>

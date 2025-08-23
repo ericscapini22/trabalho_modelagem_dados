@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/produto/apagarProduto.js" defer></script>
+    <title>Apagar Produtos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="../usuario/cadastrarUsuario.html">Usuário</a>
+            <a href="./cadastrarProduto.html">Produto</a>
+            <a href="../compra/cadastrarCompra.html">Compra</a>
+        </nav>
+    </header>
+    <br><br>
+    <main>
+        <h1>Produto - CRUD</h1>
+        <br><br>
+        <nav>
+            <a href="cadastrarProduto.html">Cadastrar</a>
+            <a href="listarProduto.html">Listar</a>
+            <a href="atualizarProduto.html">Atualizar</a>
+        </nav>
+        <br><br>
+        <h2>Apagar Produto</h2>
+        <br><br>
+        <form>
+            <label for="idProduto">Digite o ID do produto que deseja apagar:</label>
+            <br>
+            <input type="number" id="idProduto" placeholder="ID do Produto">
+        </form>
+        <br><br>
+        <form>
+            <button id="apagarProduto">Apagar</button>
+        </form>
+        <br><br>
+    </main>
+    <div id="res"></div>
+</body>
+</html>

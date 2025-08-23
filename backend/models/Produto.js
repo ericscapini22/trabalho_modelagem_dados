@@ -25,7 +25,7 @@ const Produto = db.define('produto', {
     },
     porcentagemDesconto: {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: true
     },
     estoque: {
         type: DataTypes.INTEGER,
@@ -37,10 +37,7 @@ const Produto = db.define('produto', {
     },
     ft_produto: {
         type: DataTypes.STRING,
-        allowNull: true,
-        validate: {
-            isUrl: true
-        }
+        allowNull: true
     }
 },{
     timestamps: false,

@@ -21,10 +21,7 @@ const Usuario = db.define('usuario', {
     },
     email: {
         type: DataTypes.STRING,
-        allowNull: false,
-        validate: {
-            isEmail: true
-        }
+        allowNull: false
     },
     telefone: {
         type: DataTypes.STRING,

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/usuario/apagarUsuario.js" defer></script>
+    <title>Apagar Usuários</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="./cadastrarUsuario.html">Usuário</a>
+            <a href="../produto/cadastrarProduto.html">Produto</a>
+            <a href="../compra/cadastrarCompra.html">Compra</a>
+        </nav>
+    </header>
+    <br><br>
+    <main>
+        <h1>Usuário - CRUD</h1>
+        <br><br>
+        <nav>
+            <a href="cadastrarUsuario.html">Cadastrar</a>
+            <a href="listarUsuario.html">Listar</a>
+            <a href="atualizarUsuario.html">Atualizar</a>
+        </nav>
+        <br><br>
+        <h2>Apagar Usuário</h2>
+        <br><br>
+        <form>
+            <label for="idUsuario">Digite o ID do usuário que deseja apagar:</label>
+            <br>
+            <input type="number" id="idUsuario" placeholder="ID do Usuário">
+        </form>
+        <br><br>
+        <form>
+            <button id="apagarUsuario">Apagar</button>
+        </form>
+        <br><br>
+    </main>
+    <div id="res"></div>
+</body>
+</html>
