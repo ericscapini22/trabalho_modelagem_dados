@@ -37,7 +37,7 @@ const Compra = db.define('compra', {
     },
     descontoAplicado: {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: true
     },
     precoFinal: {
         type: DataTypes.DECIMAL(10, 2),

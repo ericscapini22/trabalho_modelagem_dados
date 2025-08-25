@@ -1,1 +1,80 @@
-<!-- TESTE -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/compra/atualizarCompra.js" defer></script>
+    <title>Atualizar Compras</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="../usuario/cadastrarUsuario.html">Usuário</a>
+            <a href="../produto/cadastrarProduto.html">Produto</a>
+            <a href="cadastrarCompra.html">Compra</a>
+        </nav>
+    </header>
+    <br><br>
+    <main>
+        <h1>Compra - CRUD</h1>
+        <br><br>
+        <nav>
+            <a href="cadastrarCompra.html">Cadastrar</a>
+            <a href="listarCompra.html">Listar</a>
+            <a href="apagarCompra.html">Apagar</a>
+        </nav>
+        <br><br>
+        <h2>Atualizar Compra</h2>
+        <br><br>
+        <form>
+            <label for="idCompra">Digite o ID da Compra que deseja atualizar:</label>
+            <br>
+            <input type="number" id="idCompra" placeholder="ID da Compra">
+        </form>
+        <br><br>
+        <form>
+            <label for="codUsuario">Digite o ID do Usuário comprador:</label>
+            <br>
+            <input type="number" id="codUsuario" placeholder="ID do Usuário">
+            <br><br>
+            <label for="codProduto">Digite a ID do Produto comprado:</label>
+            <br>
+            <input type="number" id="codProduto" placeholder="ID do Produto">
+            <br><br>
+            <label for="quant">Digite a quantidade de Produtos comprados:</label>
+            <br>
+            <input type="number" id="quant" placeholder="Quantidade Comprada">
+            <br><br>
+            <label for="dataCompra">Digite o data da Compra:</label>
+            <br>
+            <input type="date" id="dataCompra" placeholder="Data da Compra">
+            <br><br>
+            <label for="precoUnitario">Digite o preço unitário do Produto:</label>
+            <br>
+            <input type="text" id="precoUnitario" placeholder="Preço: (ex: 1000.00)">
+            <br><br>
+            <label for="descontoAplicado">Digite o desconto aplicado:</label>
+            <br>
+            <input type="number" id="descontoAplicado" placeholder="Desconto Aplicado">
+            <br><br>
+            <label for="precoFinal">Digite a preço final da Compra:</label>
+            <br>
+            <input type="text" id="precoFinal" placeholder="Preço Final">
+            <br><br>
+            <label for="formaPagamento">Digite a forma de Pagamento:</label>
+            <br>
+            <input type="text" id="formaPagamento" placeholder="(PIX, Cartão, Boleto)">
+            <br><br>
+            <label for="statusCompra">Digite o status da Compra:</label>
+            <br>
+            <input type="text" id="statusCompra" placeholder="(Pendente, Enviado, Entregue)">
+            <br><br><br>
+            <button id="atualizarCompra">Cadastrar</button>
+            <br><br>
+        </form>
+    </main>
+    <div id="res"></div>
+</body>
+</html>

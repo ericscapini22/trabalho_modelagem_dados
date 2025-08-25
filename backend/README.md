@@ -43,6 +43,10 @@ PORT=3000
 
 > 💡 O nome do banco (`compras_db`) deve ser exatamente esse.
 
+```bash
+node sync.js
+```
+
 ### 4. Rode o projeto:
 
 ```bash

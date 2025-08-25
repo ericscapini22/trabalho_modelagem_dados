@@ -11,7 +11,7 @@ Usuario.hasMany(Compra, {
 Compra.belongsTo(Usuario, {
     foreignKey: 'codUsuario',
     as: 'usuarioCompra',
-    allownull: false
+    allowNull: false
 })
 
 Produto.hasMany(Compra, {
@@ -23,7 +23,7 @@ Produto.hasMany(Compra, {
 Compra.belongsTo(Produto, {
     foreignKey: 'codProduto',
     as: 'produtoCompra',
-    allownull: false
+    allowNull: false
 })
 
 module.exports = { Usuario, Produto, Compra }

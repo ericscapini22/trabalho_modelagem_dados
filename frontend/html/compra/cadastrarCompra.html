@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/style.css">
-    <script src="" defer></script>
+    <script src="../../js/compra/cadastrarCompra.js" defer></script>
     <title>Cadastrar Compras</title>
 </head>
 <body>
@@ -29,39 +29,43 @@
         <h2>Cadastrar Compra</h2>
         <br><br>
         <form>
-            <label for="titulo">Digite o título do Produto:</label>
+            <label for="codUsuario">Digite o ID do Usuário comprador:</label>
             <br>
-            <input type="text" id="titulo" placeholder="Título">
+            <input type="number" id="codUsuario" placeholder="ID do Usuário">
             <br><br>
-            <label for="descricao">Digite a descrição do Produto:</label>
+            <label for="codProduto">Digite a ID do Produto comprado:</label>
             <br>
-            <input type="text" id="descricao" placeholder="Descrição">
+            <input type="number" id="codProduto" placeholder="ID do Produto">
             <br><br>
-            <label for="categoria">Digite a categoria do Produto:</label>
+            <label for="quant">Digite a quantidade de Produtos comprados:</label>
             <br>
-            <input type="text" id="categoria" placeholder="Categoria">
+            <input type="number" id="quant" placeholder="Quantidade Comprada">
             <br><br>
-            <label for="preco">Digite o preço do Produto:</label>
+            <label for="dataCompra">Digite o data da Compra:</label>
             <br>
-            <input type="text" id="preco" placeholder="Preço: (ex: 1000.00)">
+            <input type="date" id="dataCompra" placeholder="Data da Compra">
             <br><br>
-            <label for="porcentagemDesconto">Digite a porcentagem de desconto do Produto:</label>
+            <label for="precoUnitario">Digite o preço unitário do Produto:</label>
             <br>
-            <input type="number" id="porcentagemDesconto" placeholder="Porcentagem de Desconto">
+            <input type="text" id="precoUnitario" placeholder="Preço: (ex: 1000.00)">
             <br><br>
-            <label for="estoque">Digite a quantidade de estoque do Produto:</label>
+            <label for="descontoAplicado">Digite o desconto aplicado:</label>
             <br>
-            <input type="number" id="estoque" placeholder="Estoque">
+            <input type="number" id="descontoAplicado" placeholder="Desconto Aplicado">
             <br><br>
-            <label for="marca">Digite a marca do Produto:</label>
+            <label for="precoFinal">Digite a preço final da Compra:</label>
             <br>
-            <input type="text" id="marca" placeholder="Marca">
+            <input type="text" id="precoFinal" placeholder="Preço Final">
             <br><br>
-            <label for="ft_produto">Foto do Produto:</label>
+            <label for="formaPagamento">Digite a forma de Pagamento:</label>
             <br>
-            <input type="text" id="ft_produto" placeholder="URL da foto">
+            <input type="text" id="formaPagamento" placeholder="(PIX, Cartão, Boleto)">
+            <br><br>
+            <label for="statusCompra">Digite o status da Compra:</label>
+            <br>
+            <input type="text" id="statusCompra" placeholder="(Pendente, Enviado, Entregue)">
             <br><br><br>
-            <button id="cadastrarProduto">Cadastrar</button>
+            <button id="cadastrarCompra">Cadastrar</button>
             <br><br>
         </form>
     </main>
