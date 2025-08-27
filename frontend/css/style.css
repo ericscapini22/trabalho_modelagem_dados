@@ -10,13 +10,20 @@ footer {
 }
 
 a {
-    padding-left: 15px;
+    display: inline-block;
+    margin: 6px 10px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
     text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
 }
 
 a:hover {
     font-size: 1.5rem;
     transition: 0.8s;
+    background-color: #0056b3;
 }
 
 #res {
@@ -28,8 +35,24 @@ a:hover {
     max-height: 400px;
 }
 
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+input {
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 400px;
+}
+
 button {
-    background-color: #04AA6D; /* Green */
+    background-color: #04AA6D;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -37,9 +60,43 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
 }
 
 button:hover {
     font-size: 20px;
     transition: 0.8s;
+    background-color: #058d10;
+}
+
+#graficoProdutos, #graficoUsuarios {
+  max-width: 500px;
+  max-height: 300px;
+  margin: auto;
+  display: block;
+}
+
+#res {
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 1300px;     
+  background: #f9f9f9;  
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+
+  /* se tiver overflow de texto grande */
+  word-wrap: break-word; 
+  overflow-x: auto;
+}
+
+#res img {
+  display: block;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }

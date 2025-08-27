@@ -9,15 +9,15 @@ listarProduto.addEventListener('click', (e)=>{
     .then(valores => {
         res.innerHTML = 'Produtos listados com Sucesso! <br><br><hr><br>'
         valores.forEach(val => {
-            res.innerHTML += 'ID do Produto: ' + val.idProduto 
-            res.innerHTML += ' | Título: ' + val.titulo
-            res.innerHTML += ' | Descrição: ' + val.descricao
-            res.innerHTML += ' | Categoria: ' + val.categoria
-            res.innerHTML += ' | Preço: ' + val.preco
-            res.innerHTML += ' | Porcentagem de Desconto: ' + val.porcentagemDesconto
-            res.innerHTML += ' | Estoque: ' + val.estoque
-            res.innerHTML += ' | Marca: ' + val.marca
-            res.innerHTML += ' | Foto do Produto (URL): ' + val.ft_produto + '<br><br><hr><br>'
+            res.innerHTML += '<b>ID do Produto</b>: ' + val.idProduto 
+            res.innerHTML += ' | <b>Título</b>: ' + val.titulo
+            res.innerHTML += ' | <b>Descrição</b>: ' + val.descricao
+            res.innerHTML += ' | <b>Categoria</b>: ' + val.categoria
+            res.innerHTML += ' | <b>Preço</b>: ' + val.preco
+            res.innerHTML += ' | <b>Porcentagem de Desconto</b>: ' + val.porcentagemDesconto
+            res.innerHTML += ' | <b>Estoque</b>: ' + val.estoque
+            res.innerHTML += ' | <b>Marca</b>: ' + val.marca
+            res.innerHTML += ' | <b>Foto do Produto (URL)</b>: ' + val.ft_produto + '<br><br><hr><br>'
         })
     })
     .catch((err)=>{

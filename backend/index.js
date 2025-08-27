@@ -29,6 +29,7 @@ app.delete('/usuario/:id', usuarioController.apagar)
 
 app.post('/produto', produtoController.cadastrar)
 app.get('/produto', produtoController.listar)
+app.get('/produto/:id', produtoController.listarPorId)
 app.put('/produto/:id', produtoController.atualizar)
 app.delete('/produto/:id', produtoController.apagar)
 

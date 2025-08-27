@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/style.css">
-    <script src="../../js/usuario/consumirUsuario.js" defer></script>
-    <title>API - Usuários</title>
+    <script src="../../js/usuario/listarUsuarioNome.js" defer></script>
+    <title>Listar Usuários</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -24,15 +26,17 @@
         <nav>
             <a href="cadastrarUsuario.html">Cadastrar</a>
             <a href="listarUsuario.html">Listar</a>
-            <a href="listarUsuarioNome.html">Buscar por Nome</a>
             <a href="atualizarUsuario.html">Atualizar</a>
             <a href="apagarUsuario.html">Apagar</a>
+            <a href="consumirUsuario.html">Consumir API</a>
         </nav>
         <br><br>
-        <h2>Consumir API - Usuários</h2>
-        <br><br>
         <form>
-            <button id="consumirUsuario">Consumir API</button>
+            <label for="nome">Digite o nome do usuário que deseja buscar:</label>
+            <br>
+            <input type="text" id="nome" placeholder="Nome">
+            <br><br>
+            <button id="listarPorNome">Buscar Produto</button>
         </form>
         <br><br>
     </main>

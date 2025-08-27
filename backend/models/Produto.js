@@ -33,7 +33,7 @@ const Produto = db.define('produto', {
     },
     marca: {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
     },
     ft_produto: {
         type: DataTypes.STRING,
