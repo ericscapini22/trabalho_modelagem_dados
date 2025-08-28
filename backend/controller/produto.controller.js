@@ -1,4 +1,5 @@
 const Produto = require('../models/Produto')
+const sequelize = require('sequelize')
 
 const cadastrar = async (req,res)=>{
     const dados = req.body
@@ -35,6 +36,30 @@ const listarPorId = async (req,res)=>{
     } catch (err) {
         console.error('Falha ao tentar buscar produto por ID!', err)
         res.status(500).json({ message: "Falha ao tentar buscar produto por ID!"})
+    }
+}
+
+const listarPorNome = async (req, res) => {
+    const titulo = req.params.titulo
+    //Op.Like = Filtro de String avançado, % ele avisa que pode ter caracteres a mais ou não
+    try {
+        const valores = await Produto.findAll({
+            where: {
+                nome: {
+                    [sequelize.Op.like]: `%${titulo}%`
+                }
+            }
+        })
+
+        if (valores === null) {
+            res.status(404).json({ message: "Produto não encontrado!" })
+        } else {
+            res.status(200).json(valores)
+            console.log('Produto encontrado com sucesso!')
+        }
+    } catch (err) {
+        console.error('Erro ao buscar produto por nome!', err)
+        res.status(500).json({ message: "Erro ao buscar produto por nome!" })
     }
 }
 
@@ -76,4 +101,4 @@ const apagar = async (req,res)=>{
     }
 }
 
-module.exports = { cadastrar, listar, listarPorId, atualizar, apagar }
+module.exports = { cadastrar, listar, listarPorId, listarPorNome, atualizar, apagar }

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/style.css">
-    <script src="" defer></script>
-    <title>Buscar pelo Nome - Produtos</title>
+    <script src="../../js/produto/listarProdutoNome.js" defer></script>
+    <title>Buscar pelo Título - Produtos</title>
 </head>
 <body>
     <header>
@@ -31,10 +31,12 @@
             <a href="consumirProduto.html">Consumir API</a>
         </nav>
         <br><br>
-        <h2>Listar Produto pelo Nome</h2>
+        <h2>Listar Produto pelo Título</h2>
         <br><br>
         <form>
-            <button id="">Listar</button>
+            <input type="text" id="titulo" placeholder="Título">
+            <br><br>
+            <button id="listarPorNome">Buscar Produto</button>
         </form>
         <br><br>
     </main>
