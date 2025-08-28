@@ -3,11 +3,12 @@ let listarProduto = document.getElementById('listarProduto')
 
 listarProduto.addEventListener('click', (e)=>{
     e.preventDefault()
+    res.innerHTML = ''
 
     fetch('http://localhost:3000/produto')
     .then(resp => resp.json())
     .then(valores => {
-        res.innerHTML = 'Produtos listados com Sucesso! <br><br><hr><br>'
+        res.innerHTML += '<b>Produtos listados com Sucesso!</b> <br><br><hr><br>'
         valores.forEach(val => {
             res.innerHTML += '<b>ID do Produto</b>: ' + val.idProduto 
             res.innerHTML += ' | <b>Título</b>: ' + val.titulo

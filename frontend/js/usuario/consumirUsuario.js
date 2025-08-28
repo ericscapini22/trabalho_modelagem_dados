@@ -7,18 +7,18 @@ consumirUsuario.addEventListener('click', (e) => {
     fetch('https://dummyjson.com/users')
         .then(resp => resp.json())
         .then(valores => {
-            res.innerHTML = 'Dados da API consumidos com Sucesso! <br><br><hr><br>'
+            res.innerHTML = '<b>Dados da API consumidos com Sucesso!</b> <br><br><hr><br>'
             valores.users.forEach(val => {
-                res.innerHTML += 'ID do Usuário: ' + val.id
-                res.innerHTML += ' | Nome: ' + val.firstName
-                res.innerHTML += ' | Sobrenome: ' + val.lastName
-                res.innerHTML += ' | Idade: ' + val.age
-                res.innerHTML += ' | Email: ' + val.email
-                res.innerHTML += ' | Telefone: ' + val.phone
-                res.innerHTML += ' | Endereço: ' + val.address.address
-                res.innerHTML += ' | Cidade: ' + val.address.city
-                res.innerHTML += ' | Estado: ' + val.address.state
-                res.innerHTML += ' | Data de Nascimento: ' + val.birthDate + '<br><br><hr><br>'
+                res.innerHTML += '<b>ID do Usuário</b>: ' + val.id
+                res.innerHTML += ' | <b>Nome</b>: ' + val.firstName
+                res.innerHTML += ' | <b>Sobrenome</b>: ' + val.lastName
+                res.innerHTML += ' | <b>Idade</b>: ' + val.age
+                res.innerHTML += ' | <b>Email</b>: ' + val.email
+                res.innerHTML += ' | <b>Telefone</b>: ' + val.phone
+                res.innerHTML += ' | <b>Endereço</b>: ' + val.address.address
+                res.innerHTML += ' | <b>Cidade</b>: ' + val.address.city
+                res.innerHTML += ' | <b>Estado</b>: ' + val.address.state
+                res.innerHTML += ' | <b>Data de Nascimento</b>: ' + val.birthDate + '<br><br><hr><br>'
 
                 const valores = {
                     nome: val.firstName,

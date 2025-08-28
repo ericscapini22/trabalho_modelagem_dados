@@ -7,17 +7,17 @@ consumirProduto.addEventListener('click', (e) => {
     fetch('https://dummyjson.com/products')
         .then(resp => resp.json())
         .then(valores => {
-            res.innerHTML = 'Dados da API consumidos com Sucesso! <br><br><hr><br>'
+            res.innerHTML = '<b>Dados da API consumidos com Sucesso!</b> <br><br><hr><br>'
             valores.products.forEach(val => {
-                res.innerHTML += 'ID do Produto: ' + val.id
-                res.innerHTML += ' | Título: ' + val.title
-                res.innerHTML += ' | Descrição: ' + val.description
-                res.innerHTML += ' | Categoria: ' + val.category
-                res.innerHTML += ' | Preço: ' + val.price
-                res.innerHTML += ' | Porcentagem de Desconto: ' + val.discountPercentage
-                res.innerHTML += ' | Estoque: ' + val.stock
-                res.innerHTML += ' | Marca: ' + val.brand
-                res.innerHTML += ' | Foto do Produto (URL): ' + val.thumbnail + '<br><br><hr><br>'
+                res.innerHTML += '<b>ID do Produto</b>: ' + val.id
+                res.innerHTML += ' | <b>Título</b>: ' + val.title
+                res.innerHTML += ' | <b>Descrição</b>: ' + val.description
+                res.innerHTML += ' | <b>Categoria</b>: ' + val.category
+                res.innerHTML += ' | <b>Preço</b>: ' + val.price
+                res.innerHTML += ' | <b>Porcentagem de Desconto</b>: ' + val.discountPercentage
+                res.innerHTML += ' | <b>Estoque</b>: ' + val.stock
+                res.innerHTML += ' | <b>Marca</b>: ' + val.brand
+                res.innerHTML += ' | <b>Foto do Produto (URL)</b>: ' + val.thumbnail + '<br><br><hr><br>'
 
                 const valores = {
                     titulo: val.title,

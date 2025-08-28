@@ -37,17 +37,17 @@ atualizarUsuario.addEventListener('click', (e)=>{
     })
     .then(resp => resp.json())
     .then(valores => {
-        res.innerHTML = 'Usuário atualizado com Sucesso! <br><br>'
-        res.innerHTML += 'ID do Usuário: ' + valores.idUsuario
-        res.innerHTML += ' | Nome: ' + valores.nome
-        res.innerHTML += ' | Sobrenome: ' + valores.sobrenome
-        res.innerHTML += ' | Idade: ' + valores.idade
-        res.innerHTML += ' | Email: ' + valores.email
-        res.innerHTML += ' | Telefone: ' + valores.telefone
-        res.innerHTML += ' | Endereço: ' + valores.endereco
-        res.innerHTML += ' | Cidade: ' + valores.cidade
-        res.innerHTML += ' | Estado: ' + valores.estado
-        res.innerHTML += ' | Data de Nascimento: ' + valores.dataNascimento
+        res.innerHTML = '<b>Usuário atualizado com Sucesso!</b> <br><br><hr><br>'
+        res.innerHTML += '<b>ID do Usuário</b>: ' + valores.idUsuario + '<br><br>'
+        res.innerHTML += '<b>Nome</b>: ' + valores.nome + '<br><br>'
+        res.innerHTML += '<b>Sobrenome</b>: ' + valores.sobrenome + '<br><br>'
+        res.innerHTML += '<b>Idade</b>: ' + valores.idade + '<br><br>'
+        res.innerHTML += '<b>Email</b>: ' + valores.email + '<br><br>'
+        res.innerHTML += '<b>Telefone</b>: ' + valores.telefone + '<br><br>'
+        res.innerHTML += '<b>Endereço</b>: ' + valores.endereco + '<br><br>'
+        res.innerHTML += '<b>Cidade</b>: ' + valores.cidade + '<br><br>'
+        res.innerHTML += '<b>Estado</b>: ' + valores.estado + '<br><br>'
+        res.innerHTML += '<b>Data de Nascimento</b>: ' + valores.dataNascimento
     })
     .catch((err)=>{
         console.error('Falha ao tentar atualizar dados do Usuário!',err)

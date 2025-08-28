@@ -3,22 +3,23 @@ let listarUsuario = document.getElementById('listarUsuario')
 
 listarUsuario.addEventListener('click', (e)=>{
     e.preventDefault()
+    res.innerHTML = ''
 
     fetch('http://localhost:3000/usuario')
     .then(resp => resp.json())
     .then(valores => {
-        res.innerHTML = 'Usuários listados com Sucesso! <br><br><hr><br>'
+        res.innerHTML += '<b>Usuários listados com Sucesso!</b> <br><br><hr><br>'
         valores.forEach(val => {
-            res.innerHTML += 'ID do Usuário: ' + val.idUsuario 
-            res.innerHTML += ' | Nome: ' + val.nome
-            res.innerHTML += ' | Sobrenome: ' + val.sobrenome
-            res.innerHTML += ' | Idade: ' + val.idade
-            res.innerHTML += ' | Email: ' + val.email
-            res.innerHTML += ' | Telefone: ' + val.telefone
-            res.innerHTML += ' | Endereço: ' + val.endereco
-            res.innerHTML += ' | Cidade: ' + val.cidade
-            res.innerHTML += ' | Estado: ' + val.estado
-            res.innerHTML += ' | Data de Nascimento: ' + val.dataNascimento + '<br><br><hr><br>'
+            res.innerHTML += '<b>ID do Usuário</b>: ' + val.idUsuario 
+            res.innerHTML += ' | <b>Nome</b>: ' + val.nome
+            res.innerHTML += ' | <b>Sobrenome</b>: ' + val.sobrenome
+            res.innerHTML += ' | <b>Idade</b>: ' + val.idade
+            res.innerHTML += ' | <b>Email</b>: ' + val.email
+            res.innerHTML += ' | <b>Telefone</b>: ' + val.telefone
+            res.innerHTML += ' | <b>Endereço</b>: ' + val.endereco
+            res.innerHTML += ' | <b>Cidade</b>: ' + val.cidade
+            res.innerHTML += ' | <b>Estado</b>: ' + val.estado
+            res.innerHTML += ' | <b>Data de Nascimento</b>: ' + val.dataNascimento + '<br><br><hr><br>'
         })
     })
     .catch((err)=>{

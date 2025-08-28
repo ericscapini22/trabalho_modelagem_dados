@@ -77,7 +77,8 @@ button:hover {
   display: block;
 }
 
-#res {
+#res,
+#res2 {
   margin: 20px auto;
   padding: 15px;
   max-width: 1300px;     
@@ -88,8 +89,6 @@ button:hover {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
-
-  /* se tiver overflow de texto grande */
   word-wrap: break-word; 
   overflow-x: auto;
 }
@@ -99,4 +98,12 @@ button:hover {
   margin: 10px 0;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#espaco {
+    padding-top: 100px;
+}
+
+#espaco2 {
+    padding-top: 65px;
 }

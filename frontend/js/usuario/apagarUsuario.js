@@ -14,7 +14,7 @@ apagarUsuario.addEventListener('click', (e)=>{
     })
     .then(resp => resp.json())
     .then(resp => {
-        res.innerHTML = 'Dados do Usuário apagados com Sucesso!'
+        res.innerHTML = '<b>Dados do Usuário apagados com Sucesso!</b>'
     })
     .catch((err)=>{
         console.error('Falha ao tentar apagar dados do Usuário!',err)

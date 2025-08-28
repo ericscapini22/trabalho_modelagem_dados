@@ -35,16 +35,16 @@ cadastrarCompra.addEventListener('click', (e)=>{
     })
     .then(resp => resp.json())
     .then(valores => {
-        res.innerHTML = 'Compra cadastrada com Sucesso! <br><br>'
-        res.innerHTML += 'ID do Usuário: ' + valores.codUsuario
-        res.innerHTML += ' | ID do Produto: ' + valores.codProduto
-        res.innerHTML += ' | Quantidade: ' + valores.quant
-        res.innerHTML += ' | Data da Compra: ' + valores.dataCompra
-        res.innerHTML += ' | Preço Unitário: ' + valores.precoUnitario
-        res.innerHTML += ' | Desconto Aplicado: ' + valores.descontoAplicado
-        res.innerHTML += ' | Preço Final: ' + valores.precoFinal
-        res.innerHTML += ' | Forma de Pagamento: ' + valores.formaPagamento
-        res.innerHTML += ' | Status da Compra: ' + valores.statusCompra
+        res.innerHTML = '<b>Compra cadastrada com Sucesso!</b> <br><br><hr><br>'
+        res.innerHTML += '<b>ID do Usuário</b>: ' + valores.codUsuario + '<br><br>'
+        res.innerHTML += '<b>ID do Produto</b>: ' + valores.codProduto + '<br><br>'
+        res.innerHTML += '<b>Quantidade</b>: ' + valores.quant + '<br><br>'
+        res.innerHTML += '<b>Data da Compra</b>: ' + valores.dataCompra + '<br><br>'
+        res.innerHTML += '<b>Preço Unitário</b>: ' + valores.precoUnitario + '<br><br>'
+        res.innerHTML += '<b>Desconto Aplicado</b>: ' + valores.descontoAplicado + '<br><br>'
+        res.innerHTML += '<b>Preço Final</b>: ' + valores.precoFinal + '<br><br>'
+        res.innerHTML += '<b>Forma de Pagamento</b>: ' + valores.formaPagamento + '<br><br>'
+        res.innerHTML += '<b>Status da Compra</b>: ' + valores.statusCompra + '<br><br>'
     })
     .catch((err)=>{
         console.error('Falha ao tentar cadastrar Compra!',err)

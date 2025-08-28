@@ -3,22 +3,23 @@ let listarCompra = document.getElementById('listarCompra')
 
 listarCompra.addEventListener('click', (e)=>{
     e.preventDefault()
+    res.innerHTML = ''
 
     fetch('http://localhost:3000/compra')
     .then(resp => resp.json())
     .then(valores => {
-        res.innerHTML = 'Produtos listados com Sucesso! <br><br><hr><br>'
+        res.innerHTML += '<b>Compras listadas com Sucesso!</b> <br><br><hr><br>'
         valores.forEach(val => {
-            res.innerHTML += 'ID da Compra: ' + val.idCompra
-            res.innerHTML += ' | ID do Usuário: ' + val.codUsuario
-            res.innerHTML += ' | ID do Produto: ' + val.codProduto
-            res.innerHTML += ' | Quantidade: ' + val.quant
-            res.innerHTML += ' | Data da Compra: ' + val.dataCompra
-            res.innerHTML += ' | Preço Unitário: ' + val.precoUnitario
-            res.innerHTML += ' | Desconto Aplicado: ' + val.descontoAplicado
-            res.innerHTML += ' | Preço Final: ' + val.precoFinal
-            res.innerHTML += ' | Forma de Pagamento: ' + val.formaPagamento
-            res.innerHTML += ' | Status da Compra: ' + val.statusCompra + '<br><br><hr><br>'
+            res.innerHTML += '<b>ID da Compra</b>: ' + val.idCompra
+            res.innerHTML += ' | <b>ID do Usuário</b>: ' + val.codUsuario
+            res.innerHTML += ' | <b>ID do Produto</b>: ' + val.codProduto
+            res.innerHTML += ' | <b>Quantidade</b>: ' + val.quant
+            res.innerHTML += ' | <b>Data da Compra</b>: ' + val.dataCompra
+            res.innerHTML += ' | <b>Preço Unitário</b>: ' + val.precoUnitario
+            res.innerHTML += ' | <b>Desconto Aplicado</b>: ' + val.descontoAplicado
+            res.innerHTML += ' | <b>Preço Final</b>: ' + val.precoFinal
+            res.innerHTML += ' | <b>Forma de Pagamento</b>: ' + val.formaPagamento
+            res.innerHTML += ' | <b>Status da Compra</b>: ' + val.statusCompra + '<br><br><hr><br>'
         })
     })
     .catch((err)=>{

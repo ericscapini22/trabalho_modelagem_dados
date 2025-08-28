@@ -35,16 +35,16 @@ atualizarProduto.addEventListener('click', (e)=>{
     })
     .then(resp => resp.json())
     .then(valores => {
-        res.innerHTML = 'Produto atualizado com Sucesso! <br><br>'
-        res.innerHTML += 'ID do Usuário: ' + valores.idProduto
-        res.innerHTML += ' | Título: ' + valores.titulo
-        res.innerHTML += ' | Descrição: ' + valores.descricao
-        res.innerHTML += ' | Categoria: ' + valores.categoria
-        res.innerHTML += ' | Preço: ' + valores.preco
-        res.innerHTML += ' | Porcentagem de Desconto: ' + valores.porcentagemDesconto
-        res.innerHTML += ' | Estoque: ' + valores.estoque
-        res.innerHTML += ' | Marca: ' + valores.marca
-        res.innerHTML += ' | Foto do Produto (URL): ' + valores.ft_produto
+        res.innerHTML = '<b>Produto atualizado com Sucesso!</b> <br><br><hr><br>' 
+        res.innerHTML += '<b>ID do Usuário</b>: ' + valores.idProduto + '<br><br>'
+        res.innerHTML += '<b>Título</b>: ' + valores.titulo + '<br><br>'
+        res.innerHTML += '<b>Descrição</b>: ' + valores.descricao + '<br><br>'
+        res.innerHTML += '<b>Categoria</b>: ' + valores.categoria + '<br><br>'
+        res.innerHTML += '<b>Preço</b>: ' + valores.preco + '<br><br>'
+        res.innerHTML += '<b>Porcentagem de Desconto</b>: ' + valores.porcentagemDesconto + '<br><br>'
+        res.innerHTML += '<b>Estoque</b>: ' + valores.estoque + '<br><br>'
+        res.innerHTML += '<b>Marca</b>: ' + valores.marca + '<br><br>'
+        res.innerHTML += '<b>Foto do Produto (URL)</b>: ' + valores.ft_produto
     })
     .catch((err)=>{
         console.error('Falha ao tentar atualizar dados do Produto!',err)

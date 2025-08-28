@@ -22,6 +22,8 @@ app.use(cors())
 
 app.post('/usuario', usuarioController.cadastrar)
 app.get('/usuario', usuarioController.listar)
+app.get('/usuario/:id', usuarioController.listarUsuarioId)
+app.get('/usuario/nome/:nome', usuarioController.listarPorNome)
 app.put('/usuario/:id', usuarioController.atualizar)
 app.delete('/usuario/:id', usuarioController.apagar)
 

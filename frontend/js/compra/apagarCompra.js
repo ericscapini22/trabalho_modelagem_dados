@@ -14,7 +14,7 @@ apagarCompra.addEventListener('click', (e)=>{
     })
     .then(resp => resp.json())
     .then(resp => {
-        res.innerHTML = 'Dados da Compra apagados com Sucesso!'
+        res.innerHTML = '<b>Dados da Compra apagados com Sucesso!</b>'
     })
     .catch((err)=>{
         console.error('Falha ao tentar apagar dados da Compra!',err)
