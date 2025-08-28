@@ -15,11 +15,11 @@ listarPorId.addEventListener('click', (e)=>{
                 res.innerHTML += '<b>Título</b>: ' + valores.titulo + '<br><br>'
                 res.innerHTML += '<b>Descrição</b>: ' + valores.descricao + '<br><br>'
                 res.innerHTML += '<b>Categoria</b>: ' + valores.categoria + '<br><br>'
-                res.innerHTML += '<b>Preço</b>: ' + valores.preco + '<br><br>'
-                res.innerHTML += '<b>Porcentagem de Desconto</b>: ' + valores.porcentagemDesconto + '<br><br>'
+                res.innerHTML += '<b>Preço</b>: R$ ' + valores.preco + '<br><br>'
+                res.innerHTML += '<b>Porcentagem de Desconto</b>: ' + valores.porcentagemDesconto  + '% <br><br>'
                 res.innerHTML += '<b>Estoque</b>: ' + valores.estoque + '<br><br>'
                 res.innerHTML += '<b>Marca</b>: ' + valores.marca + '<br><br>'
-                res.innerHTML += '<b>Foto do Produto (URL)</b>: ' + valores.ft_produto
+                res.innerHTML += `<b>Foto do Produto</b>: <br><img src="${valores.ft_produto}" width="150px" style="display:block; margin: 20px auto;">`
             } else {
                 res.innerHTML = 'Dados do produto não encontrados!'
             }

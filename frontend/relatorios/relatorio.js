@@ -11,7 +11,7 @@ relCritico.addEventListener('click', (e) => {
             valores.forEach(val => {
                 if (val.estoque < 10) {
                     res.innerHTML += '<b>Título</b>: ' + val.titulo
-                    res.innerHTML += ' | <b>Estoque</b>: ' + val.estoque
+                    res.innerHTML += ' | <b>Estoque</b>: <span style="color:red; font-weight:bold;">' + val.estoque + '</span>'
                     res.innerHTML += ' | <b>Categoria</b>: ' + val.categoria + '<br><br><hr><br>'
                 }
             })
@@ -43,9 +43,10 @@ relConsolidado.addEventListener('click', (e) => {
                                 res2.innerHTML += ' | <b>Produto Comprado</b>: ' + product.titulo
                                 res2.innerHTML += ' | <b>Quantidade</b>: ' + val.quant
                                 res2.innerHTML += ' | <b>Data da Compra</b>: ' + val.dataCompra
-                                res2.innerHTML += ' | <b>Preço Final</b>: ' + val.precoFinal
+                                res2.innerHTML += ' | <b>Preço Final</b>: R$ ' + val.precoFinal
                                 res2.innerHTML += ' | <b>Forma de Pagamento</b>: ' + val.formaPagamento
-                                res2.innerHTML += ' | <b>Status da Compra</b>: ' + val.statusCompra + '<br><br><hr><br>'
+                                res2.innerHTML += ' | <b>Status da Compra</b>: ' + val.statusCompra
+                                res2.innerHTML += ` | <b>Foto do Produto</b>: <br><img src="${product.ft_produto}" width="150px" style="display:block; margin: 20px auto;"> <br><br><hr><br>`
                             })
                             .catch((err) => {
                                 console.error('Falha ao tentar encontrar título do Produto!', err)

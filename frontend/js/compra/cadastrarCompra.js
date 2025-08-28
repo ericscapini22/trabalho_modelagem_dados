@@ -40,9 +40,9 @@ cadastrarCompra.addEventListener('click', (e)=>{
         res.innerHTML += '<b>ID do Produto</b>: ' + valores.codProduto + '<br><br>'
         res.innerHTML += '<b>Quantidade</b>: ' + valores.quant + '<br><br>'
         res.innerHTML += '<b>Data da Compra</b>: ' + valores.dataCompra + '<br><br>'
-        res.innerHTML += '<b>Preço Unitário</b>: ' + valores.precoUnitario + '<br><br>'
-        res.innerHTML += '<b>Desconto Aplicado</b>: ' + valores.descontoAplicado + '<br><br>'
-        res.innerHTML += '<b>Preço Final</b>: ' + valores.precoFinal + '<br><br>'
+        res.innerHTML += '<b>Preço Unitário</b>: R$ ' + valores.precoUnitario + '<br><br>'
+        res.innerHTML += '<b>Desconto Aplicado</b>: ' + valores.descontoAplicado + '%<br><br>'
+        res.innerHTML += '<b>Preço Final</b> R$ : ' + valores.precoFinal + '<br><br>'
         res.innerHTML += '<b>Forma de Pagamento</b>: ' + valores.formaPagamento + '<br><br>'
         res.innerHTML += '<b>Status da Compra</b>: ' + valores.statusCompra + '<br><br>'
     })
