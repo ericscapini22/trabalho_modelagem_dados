@@ -45,7 +45,7 @@ const listarPorNome = async (req, res) => {
     try {
         const valores = await Produto.findAll({
             where: {
-                nome: {
+                titulo: {
                     [sequelize.Op.like]: `%${titulo}%`
                 }
             }

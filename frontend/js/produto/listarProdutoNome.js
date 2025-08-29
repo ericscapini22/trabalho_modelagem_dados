@@ -3,10 +3,11 @@ let listarPorNome = document.getElementById('listarPorNome')
 
 listarPorNome.addEventListener('click', (e)=>{
     e.preventDefault()
+    res.innerHTML = ''
 
     let titulo = document.getElementById('titulo').value
 
-    fetch('http://localhost:3000/usuario/nome/'+titulo)
+    fetch('http://localhost:3000/produto/titulo/'+titulo)
         .then(resp => resp.json())
         .then(valores => {
             res.innerHTML += '<b>Produto listado com Sucesso!</b> <br><br><hr><br>'
@@ -19,7 +20,7 @@ listarPorNome.addEventListener('click', (e)=>{
                 res.innerHTML += '<b>Porcentagem de Desconto</b>: ' + valores[i].porcentagemDesconto + '%<br><br>'
                 res.innerHTML += '<b>Estoque</b>: ' + valores[i].estoque + '<br><br>'
                 res.innerHTML += '<b>Marca</b>: ' + valores[i].marca + '<br><br>'
-                res.innerHTML += `<b>Foto do Produto</b>: <br><img src="${valores.ft_produto}" width="150px" style="display:block; margin: 20px auto;">`
+                res.innerHTML += `<b>Foto do Produto</b>: <br><img src="${valores[i].ft_produto}" width="150px" style="display:block; margin: 20px auto;">`
             }
 
         })

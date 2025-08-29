@@ -32,7 +32,7 @@ app.delete('/usuario/:id', usuarioController.apagar)
 app.post('/produto', produtoController.cadastrar)
 app.get('/produto', produtoController.listar)
 app.get('/produto/:id', produtoController.listarPorId)
-app.get('/produto/nome/:titulo', produtoController.listarPorNome)
+app.get('/produto/titulo/:titulo', produtoController.listarPorNome)
 app.put('/produto/:id', produtoController.atualizar)
 app.delete('/produto/:id', produtoController.apagar)
 
